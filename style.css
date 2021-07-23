@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:visited{
+    color: currentColor;
+}
+
+@font-face {
+    font-family: yomogi;
+    src: url(./assets/Yomogi-Regular.ttf);
+}
+@font-face {
+    font-family: amaticbold;
+    src: url(./assets/AmaticSC-Bold.ttf);
+}
+
+body{
+    font-family: amaticbold, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(255, 176, 189, 0.849);
+    font-size: 30px;
+    position: fixed;
+    padding-left: 10%;
+    right: 0;
+    left: 0;
+    height: 60px;
+}
+
+#logo{
+    width: 150px;
+}
+
+header ul{
+    list-style: none;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header li{
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+    padding-right: 20px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 1px black;
+}
+
+#intro{
+    background-image: url(./assets/artem-beliaikin-a8MJQHunT-8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 21%;
+    font-size: 60px;
+    height: 300px;
+    
+}
+
+#intro h1{
+    margin-bottom: 200px;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 1px rgb(255, 176, 189);
+}
+
+#quemsomos{
+    background-color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 95px;
+    overflow: hidden;
+}
+
+#quemsomos img{
+    margin: auto;
+    width: 350px;
+    box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.03), 0px 6.7px 5.3px rgba(0, 0, 0, 0.05), 0px 12.5px 10px rgba(0, 0, 0, 0.06), 0px 22.3px 17.9px rgba(0, 0, 0, 0.07), 0px 41.8px 33.4px rgba(0, 0, 0, 0.09), 0px 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+#conteudo{
+    text-align: justify;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#conteudo h2{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#conteudo p{
+    font-family: yomogi;
+    font-size: 20px;
+    margin: auto;
+    max-width: 400px;
+}
+
+#since{
+    text-align: center;
+}
+
+#catalogo{
+    background-image: url(./assets/viktor-forgacs-VHAocJT-zH0-unsplash.jpg);
+    background-color: rgb(255, 176, 189);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    padding-top: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(255, 176, 189);
+    text-shadow: 2px 2px 1px black, 1px 1px 1px black;
+}
+
+#catalogo h2{
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+
+#catalogo li{
+    text-decoration: underline;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+#copy a:hover{
+    text-decoration: none;
+}
+
+#divmae{
+    text-align: center;
+    padding-left: auto;
+}
+
+#divmae div{
+    margin: 80px 40px 80px 40px;
+}
+
+.divfilho{
+    display: inline-block;
+}
+
+.divfilho h3{
+    font-size: 36px;
+}
+
+#kk{
+    transform: translateY(-38%);
+}
+
+.divfilho p{
+    font-size: 24px;
+}
+
+#links{
+    text-align: center;
+    margin: 30px;
+}
+
+#face, #insta{
+    margin: 5px;
+    width: 30px;
+}
+
+#copy{
+    display: block;
+    height: 20px;
+    background-color: rgb(255, 176, 189, 0.849);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        background-color: rgb(255, 176, 189);
+        height: 280px;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+    
+    header ul{
+        position: static;
+        padding-top: 40%;
+        margin: auto;
+        width: 95%;
+    }
+
+    header li{
+       display: block;
+       text-align: center;
+       padding-right: 0;
+       margin-top: 15px;
+       border-right: 2px solid black;
+       border-left: 2px solid black;
+    }
+
+    #intro h1{
+        font-size: 50px;
+    }
+
+    #logo{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #quemsomos{
+        margin: auto;
+        width: 300px;
+    }
+
+    #conteudo h2{
+        font-size: 40px;
+    }
+
+    #conteudo p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    #intro{
+        font-size: 120px;
+        height: 600px;
+        padding-left: 30px;
+    }
+
+    #quemsomos{
+        background-color: white;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 95px;
+        padding-left: 30%;
+        padding-right: 100px;
+        overflow: hidden;
+    }
+
+    #quemsomos img{
+        float: left;
+        margin-right: 100px;
+        width: 350px;
+        box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.03), 0px 6.7px 5.3px rgba(0, 0, 0, 0.05), 0px 12.5px 10px rgba(0, 0, 0, 0.06), 0px 22.3px 17.9px rgba(0, 0, 0, 0.07), 0px 41.8px 33.4px rgba(0, 0, 0, 0.09), 0px 100px 80px rgba(0, 0, 0, 0.02);
+    }
+    
+    #conteudo{
+        text-align: justify;
+        margin: auto;
+        max-width: 400px;
+    }
+    
+    #conteudo h2{
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+    
+    #conteudo p{
+        margin: auto;
+        width: 800px;
+        font-size: 20px;
+    }
+}
